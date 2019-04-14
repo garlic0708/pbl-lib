@@ -4,6 +4,7 @@ import {introspectSchema, makeRemoteExecutableSchema} from "graphql-tools/dist/i
 import {setContext} from "apollo-link-context";
 import {services} from "./config";
 import mergeSchemas from "graphql-tools/dist/stitching/mergeSchemas";
+import config from './config'
 
 const DEFAULT_LIMIT = 10;
 
@@ -96,4 +97,4 @@ export function delegateToSchema({schema, fieldName, args, context, info}) {
     })
 }
 
-export * as config from 'config'
+export {config}
