@@ -10,20 +10,31 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@babel/polyfill": "^7.4.3",
+    "apollo-client-preset": "^1.0.8",
+    "apollo-link": "^1.2.11",
     "apollo-link-context": "^1.0.17",
     "apollo-link-http": "^1.5.14",
-    "graphql-tools": "^4.0.4",
+    "apollo-link-ws": "^1.0.17",
+    "apollo-utilities": "latest",
+    "graphql-tag": "^2.10.1",
+    "graphql-tools": "5.0.0-rc.0",
     "mongoose": "^5.5.1",
     "node-fetch": "^2.3.0",
-    "@babel/polyfill": "^7.4.3"
+    "subscriptions-transport-ws": "^0.9.16",
+    "ws": "^6.2.1"
   },
   "devDependencies": {
     "@babel/cli": "^7.2.3",
     "@babel/core": "^7.3.4",
     "@babel/plugin-proposal-optional-chaining": "^7.2.0",
     "@babel/plugin-proposal-throw-expressions": "^7.2.0",
+    "@babel/plugin-proposal-export-default-from": "^7.2.0",
     "@babel/preset-env": "^7.3.4",
     "@babel/preset-flow": "^7.0.0",
     "@babel/register": "^7.4.0"
+  },
+  "peerDependencies": {
+    "graphql": "^14.2.1"
   }
 }
